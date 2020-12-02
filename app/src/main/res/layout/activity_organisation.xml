@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrganisationActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingVertical="30dp"
+            android:gravity="center"
+            android:background="@drawable/org_profile_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_marginHorizontal="30dp"
+                android:layout_gravity="right"
+                android:id="@+id/btn_edit_org"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:cardCornerRadius="100dp"
+                >
+
+                <ImageView
+                    android:id="@+id/img_org_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:src="@drawable/ic_baseline_image_24" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_org_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Organisation name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_org_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="Org description"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_org_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Org Location"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visits"
+            android:textStyle="bold" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/org_user_recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_visit_org"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Visit"-->
+<!--            />-->
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Qr code"/>
+            <ImageView
+                android:id="@+id/qr_img_org_profile"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:src="@drawable/qrplaceholder"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

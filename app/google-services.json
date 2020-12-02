@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "811651698103",
+    "firebase_url": "https://covid-19-tracking-app-17a23.firebaseio.com",
+    "project_id": "covid-19-tracking-app-17a23",
+    "storage_bucket": "covid-19-tracking-app-17a23.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:811651698103:android:41b7b13daad282dd0d2c32",
+        "android_client_info": {
+          "package_name": "com.example.covidtrucking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "811651698103-5l075nlkd2i21d3rcijvesf108nvqk5d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCG51eDwMsdSLF_YtlVl1ndIYPqpnWbJD4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "811651698103-5l075nlkd2i21d3rcijvesf108nvqk5d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
